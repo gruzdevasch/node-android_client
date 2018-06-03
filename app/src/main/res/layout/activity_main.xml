@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="138dp"
+            android:text="Вы вошли, как "
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:onClick="openLoginActivity"
+            android:text="Log In"
+            android:textColor="#0072BB" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:onClick="openSignUpActivity"
+            android:text="Sign Up"
+            android:textColor="#1E91D6" />
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/chpbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openChangePasswordActivity"
+            android:text="Change password"
+            android:textColor="#1E91D6" />
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sortUsers"
+            android:text="Sort users by name"
+            android:textColor="#1E91D6" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of users:"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <ListView
+            android:id="@+id/lvMain"
+            android:layout_width="368dp"
+            android:layout_height="328dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="175dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
